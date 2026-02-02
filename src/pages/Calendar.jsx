@@ -13,9 +13,9 @@ export default function Calendar() {
   const [upcomingEvents, setUpcomingEvents] = useState([]);
 
   useEffect(() => {
-      .then(setUser)
-      .catch(() => setUser(null))
-      .finally(() => setLoading(false));
+    // Backend calendar logic removed (Base44)
+    // This page now renders statically
+    setLoading(false);
   }, []);
 
   useEffect(() => {
