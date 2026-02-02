@@ -11,9 +11,9 @@ export default function Analysis() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-      .then(setUser)
-      .catch(() => setUser(null))
-      .finally(() => setLoading(false));
+    // Backend calendar logic removed (Base44)
+    // This page now renders statically
+    setLoading(false);
   }, []);
 
   if (loading) return null;
